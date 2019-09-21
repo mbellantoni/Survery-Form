@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <h1 id="title"> Survery Form </h1>
+  <p id="description"> This survery will be used to collect information </p>
+  
+  <form id="survey-form" action="submit-information">
+   <label id="name-label">
+    <input type="text" placeholder="name" id="name" required>
+   </label>
+   <label id="email-label">
+    <input type="email"  placeholder="email" id="email" required>
+   </label>
+   <label id="number-label">
+    <input type="number" placeholder="number" id= "number" min="0" max ="100000">
+    </label>
+   
+    <input list="dropdown">
+    <datalist id="dropdown">
+       <option value="door number 1">
+       <option value="door number 2">
+       <option value="door number 3">
+    </datalist>
+    
+    <label for="less-info">
+    <input type="radio" id= "less-info" name="less-info-more-     info" value="option2" checked>
+    Less Info</label>
+    <label for="more-info">
+    <input type="radio" id="more-info" name="less-info-more-     info" value="option1">
+      More Info</label>
+    
+  <label for="global">
+    <input type="checkbox" id="global" name="traits" value="option3" >Global</label>
+  <label for="national">
+    <input type="checkbox" id="national" name="traits" value="option4">National</label>
+  <label for="local">
+    <input type="checkbox" id="local" name="traits" value="option5" >Local</label>
+    
+    <textarea> </textarea>
+    <button type="submit" value="send-request" id="submit"> Submit </button>
+  </form>
+</html
